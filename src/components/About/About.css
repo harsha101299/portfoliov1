@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,200&family=Dela+Gothic+One&family=Karla:ital,wght@1,300&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.TypeHeading {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  font-size: 40px;
+  /* margin-top: 40px; */
+}
+.AboutMe {
+  background-image: linear-gradient(180deg, #121711, rgb(26, 27, 15));
+  background-color: rgb(163, 138, 104);
+  padding: 30px 0px;
+}
+.HeadType {
+  margin: 0px;
+  font-size: 70px;
+  font-weight: 800;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Young Serif", serif;
+  text-align: center;
+}
+
+.detailsSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  transition: all 1s ease-in;
+}
+
+.Mydescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 700px;
+  font-size: 20px;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+}
+
+.nameInDesc {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+.tagInDesc {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.divider {
+  display: block;
+  margin: 30px 0;
+  width: 170px;
+  height: 2px;
+  background-color: #00b7c7;
+}
+
+.detailsSection figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(95, 94, 94, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 10px 25px 15px 0px rgba(255, 255, 255, 0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0px 5px 15px 0px rgba(95, 94, 94, 0.6);
+		transform: translatey(0px);
+	}
+}
+.profilePic {
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 10px solid black;
+  text-align: center;
+  transition: all 0.3s ease-in;
+  animation: float 6s ease-in-out infinite;
+}
+
+.profilePic:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 7px 30px rgb(255, 255, 255);
+}
+
+.tabLinks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+.tabLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  font-size: 32px;
+}
+.link {
+  cursor: pointer;
+}
+.active {
+  border-bottom: 4px solid rgb(13, 196, 196);
+}
+
+.display-card {
+  width: 80%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 310px) {
+  .detailsSection {
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+  .Mydescription {
+    max-width: 80%;
+    font-size: 18px;
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+  }
+
+  .nameInDesc {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .tagInDesc {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .tabLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    font-size: 18px;
+  }
+}

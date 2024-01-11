@@ -1,0 +1,56 @@
+.mainBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 10px;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+.mainBox:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  cursor: pointer;
+}
+
+.linkForProj {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkForProj > img {
+  height: 120px;
+  border: 2px solid rgb(27, 27, 25);
+  border-radius: 13%;
+}
+.projDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+}
+.projDesc span {
+  color: rgb(5, 5, 5);
+  margin: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: end;
+}
+.description {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 310px) {
+  .mainBox {
+    width: 85%;
+  }
+
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap');
+
+.TypeHeading {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  font-size: 40px;
+  /* margin-top: 40px; */
+}
+.Skills {
+  /* background-image: linear-gradient(90deg,#AB91AC,#535E9C); */
+  /* background: url("../../images/SkillsBack.jpg"); */
+  background-size: cover;
+  /* background-color: rgb(163, 138, 104); */
+  padding: 30px 0px;
+}
+.Skillset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapHead{
+    width: 48%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wrapHead >h3 {
+    font-size: 34px;
+    font-weight: 500;
+    font-family: "Young Serif", serif;
+    color: #000000;
+    margin: 20px 0px  0px 0px;
+    font-family: 'Arimo', sans-serif;
+  }
+.skillBLocks {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+  width: 40%;
+}
+
+.skillBLocks > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.skillBLocks > span > p {
+  font-size: 10px;
+  margin: 0px;
+  outline: 2px solid rgb(97, 91, 91);
+  border-radius: 30%;
+  padding: 2px;
+}
+.skillBLocks > span > img {
+  height: 60px;
+  width: 60px;
+  border-radius: 30%;
+  transition: transform 0.1s ease-in-out;
+}
+
+.skillBLocks > span > img:hover {
+  transform: scale(1.1);
+}
+.skillTools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  margin-top: 50px;
+}
+
+.toolblocks {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.toolblocks > span > img {
+  margin: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 30%;
+  transition: transform 0.1s ease-in-out;
+}
+
+.toolblocks > span > img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 310px){
+  .Skillset {
+    flex-direction: column;
+  }
+
+  .wrapHead{
+    width: 98%;
+}
+}

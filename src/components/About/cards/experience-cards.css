@@ -1,0 +1,34 @@
+.experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 22px;
+}
+
+.card {
+  border: 2px solid rgb(255, 255, 255);
+  min-width: 45%;
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+}
+
+.work{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.work > h4 ,.work > p{
+    margin: 10px;
+    font-size: 28px;
+}
+
+.work > p{
+    margin-bottom: 25px;
+}
+.timeline{
+    color:#00b7c7;
+    margin: 10px;
+}

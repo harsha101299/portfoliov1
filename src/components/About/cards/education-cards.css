@@ -1,0 +1,67 @@
+.education {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 22px;
+}
+
+.educard {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+  /* width: 28%; */
+}
+
+.educard:hover {
+  transform: scale(1.05);
+  border: 2px solid #00b7c7;
+  box-shadow: 0px 0px 30px#00b7c7;
+  cursor: pointer;
+}
+
+.educard > h5 {
+  margin: 10px;
+  color: #0ed8eb;
+}
+.educard > h4 {
+    margin: 10px;
+  }
+.study {
+  margin: 10px;
+  color: #00b7c7;
+}
+.educard > h3 {
+  margin: 10px;
+}
+.btech {
+  width: 33%;
+}
+.inter {
+  width: 27%;
+}
+.tenth {
+  width: 24%;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 310px){
+  .education {
+    flex-direction: column;
+
+  }
+  
+
+  
+  .educard:hover {
+    transform: scale(1.05);
+    border: 2px solid #00b7c7;
+    box-shadow: 0px 0px 30px#00b7c7;
+    cursor: pointer;
+  }
+  
+
+  .btech,.inter , .tenth {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+}

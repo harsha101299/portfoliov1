@@ -1,0 +1,65 @@
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 22px;
+  top: -150px;
+  right: 500px;
+  transition: all 0.7s ease-in;
+}
+
+.card {
+  border: 2px solid rgb(255, 255, 255);
+  width: 45%;
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  border: 2px solid #00b7c7;
+  box-shadow: 0px 0px 30px#00b7c7;
+  cursor: pointer;
+}
+
+.card-heading {
+  margin: 0%;
+  padding: 10px;
+  background-color: #00b7c7;
+  text-align: center;
+  border-radius: 8px;
+}
+.card-values {
+  padding: 4%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+}
+.professional {
+  grid-template-columns: auto auto;
+}
+.card-values > span {
+  padding: 8px;
+}
+.card-values > span > svg {
+  margin-right: 10px;
+}
+.icons {
+  color: rgb(243, 152, 49);
+}
+
+@media only screen and (max-width: 480px) and (min-width: 310px) {
+  .skill {
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .card {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .professional,
+  .techincal {
+    grid-template-columns: auto auto;
+  }
+}
